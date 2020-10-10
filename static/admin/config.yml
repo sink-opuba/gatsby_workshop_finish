@@ -1,0 +1,29 @@
+backend:
+  name: git-gateway
+  repo: sink-opuba/sinkopuba
+
+media_folder: static/assets
+public_folder: ../static/assets
+site_url: https://sinkopuba.com
+display_url: https://sinkopuba.com
+logo_url: ../../src/images/sinkopuba.png
+
+collections:
+  - name: blog
+    label: Blog
+    folder: blog
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: "Publish Date", widget: datetime }
+      - { name: title, label: Title }
+      - {
+          name: description,
+          label: Description,
+          widget: "text",
+          required: false,
+        }
+      - { name: tag, label: "Tag(s)", widget: "text" }
+      - { name: "featuredimage", label: "Featured Image", widget: image }
+      - { name: "imagedescription", label: "Image Description", widget: "text" }
+      - { name: body, label: Body, widget: markdown }
