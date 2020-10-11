@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `Gatsby Workshop`,
-    description: `Sinkopere Opuba - Sharing thoughts on code, technology, engineering, and expriences.`,
+    description: `Example site for Gatsby Workshop session`,
     author: `@sinkopuba`,
     twitterUsername: `@sinkopuba`,
     siteUrl: "https://sinkgwork.netlify.app",
-    image: `src/images/sinkopuba.png`,
+    image: `src/images/gatsby-icon.png`,
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -49,13 +49,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `sinkopere opuba`,
+        name: `Gatsy Workshop`,
         short_name: `sinkopuba`,
         start_url: `/`,
         background_color: `#1D014B`,
         theme_color: `#1D014B`,
         display: `minimal-ui`,
-        icon: `src/images/sinkopuba.png`, // This path is relative to the root of the site.
+        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
     {
